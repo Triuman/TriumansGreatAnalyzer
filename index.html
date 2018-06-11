@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="data.js"></script>
+    <script src="Triuman's Great Analyzer.js"></script>
+
+</head>
+
+<body>
+    <select id="selectSymbol">
+        <option value="EURUSD">EURUSD</option>
+        <option value="USDTRY">USDTRY</option>
+        <option value="GBPUSD">GBPUSD</option>
+        <option value="USDJPY">USDJPY</option>
+        <option value="USDCAD">USDCAD</option>
+        <option value="USDCHF">USDCHF</option>
+        <option value="USDAUD">USDAUD</option>
+        <option value="EURGBP">EURGBP</option>
+        <option value="EURAUD">EURAUD</option>
+    </select>
+
+    <input type="button" value="Get Best Settings" onclick="GetBestSettingsClick()"></input>
+
+    <input type="button" value="Show Profit by Hour" onclick="ShowProfitByHour()"></input>
+    <label title="" for="txtProfitWaitingTime">Take Profit Waiting Time:</label>
+    <input type="text" id="txtProfitWaitingTime"></input>
+    <label title="" for="txtTakeProfitSpreadCount">Take Profit Spread Count:</label>
+    <input type="text" id="txtTakeProfitSpreadCount"></input>
+    <label title="" for="txtStopLossSpreadCount">Stop Loss Spread Count:</label>
+    <input type="text" id="txtStopLossSpreadCount"></input>
+
+    <div id="divResult"></div>
+
+
+    <div id="curve_chart" style="width: 100%; height: 500px"></div>
+
+
+</body>
+
+</html>
